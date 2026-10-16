@@ -18,6 +18,8 @@ body {
   font-family: 'DM Sans', Arial, sans-serif;
   line-height: 1.6;
 }
+
+
 h1,
 h2,
 h3 {
@@ -85,11 +87,7 @@ img {
   margin-inline: auto;
 }
 
-.experiencia-final {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--ink);
-}
+
 
 .section {
   padding-block: 68px;
@@ -153,7 +151,7 @@ img {
   padding: 55px 0;
 }
 .page-hero h1 {
-  font-size: 48px;
+  font-size: 55px;
   margin: 10px 0;
 }
 .page-hero p {
@@ -161,7 +159,6 @@ img {
   color: #d5e4db;
 }
 
-/*A*/
 
 .menu-tiempos {
   display: flex;
@@ -262,7 +259,7 @@ html {
   margin: 65px 0 35px;
   padding: 35px;
   border-radius: 18px;
-  background-color: #e9eee5;
+  background-color: rgb(200, 214, 203);
   text-align: center;
 }
 
@@ -272,42 +269,185 @@ html {
   line-height: 1.8;
 }
 
-@media (max-width: 650px) {
+/* Footer */
+
+.site-footer {
+  background: var(--forest);
+  color: #eee;
+  padding: 35px 0;
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.footer-inner p {
+  margin: 0;
+  font-size: 13px;
+}
+
+/* Media Queries */
+
+
+/* Pantallas de hasta 1280px */
+@media screen and (max-width: 1280px) {
+
+  .container {
+    width: 90%;
+  }
+
+  .nav-inner {
+    gap: 20px;
+  }
+
+  .page-hero {
+    padding: 45px 0;
+  }
+
+  .page-hero h1 {
+    font-size: 42px;
+  }
+
+  .section {
+    padding-block: 50px;
+  }
+
+  .plato-card {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding: 20px;
+  }
+
+  .plato-card img {
+    height: 280px;
+  }
+
+  .section h2 {
+    font-size: 32px;
+  }
+
+  .experiencia-final {
+    padding: 30px;
+  }
+}
+
+/* Dispositivos móviles de hasta 375px */
+@media screen and (max-width: 375px) {
+
+  .container {
+    width: 92%;
+  }
+
+  .nav-inner {
+    flex-direction: row;
+    gap: 12px;
+    padding: 15px 0;
+  }
+
+  .logo {
+    font-size: 25px;
+  }
+
+  .nav-links {
+    flex-wrap: nowrap;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .page-hero {
+    padding: 35px 0;
+    text-align: center;
+  }
+
+  .page-hero h1 {
+    font-size: 32px;
+  }
+
+  .page-hero p {
+    font-size: 14px;
+  }
+
+  .section {
+    padding-block: 30px;
+  }
+
+  .section h2 {
+    font-size: 27px;
+  }
+
   .menu-tiempos {
     flex-direction: column;
+    align-items: stretch;
     gap: 10px;
-    margin-bottom: 35px;
+    margin: 20px 0 35px;
   }
 
   .menu-tiempos a {
     text-align: center;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .section-propuesta {
+    margin-bottom: 30px;
+  }
+
+  .section-propuesta p {
+    font-size: 14px;
   }
 
   .plato-card {
     grid-template-columns: 1fr;
     gap: 15px;
-    padding: 16px;
+    padding: 12px;
+    margin: 25px 0;
   }
 
   .plato-card img {
-    height: 230px;
+    height: 220px;
   }
 
   .plato-info {
     padding: 8px;
   }
 
+  .plato-info h2 {
+    font-size: 27px;
+  }
+
+  .plato-info h3 {
+    font-size: 21px;
+  }
+
+  .plato-info p {
+    font-size: 14px;
+  }
+
+  .plato-info .precio {
+    font-size: 20px;
+  }
+
   .experiencia-final {
-    padding: 24px 18px;
+    margin: 35px 0 20px;
+    padding: 20px 15px;
+  }
+
+  .experiencia-final p {
+    font-size: 14px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .footer-inner p {
+    font-size: 12px;
   }
 }
 
-.span-savia {
-  color: var(--gold);
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  background-color: var(--forest);
-}

@@ -16,15 +16,19 @@ El sitio incluye la página Inicio y las plantillas `pages/menu.html`, `pages/eq
 
 ## Responsables de las funcionalidades
 
-| Estudiante | Página asignada | Rama | Commits principales |
+| Estudiante | Página asignada | Rama | Commits principales | 
 |---|---|---|---|
-| | | | |
+| Daniel Umaña Murillo| menu.html| feature_1|commits en feature_1  |
+| Daniel Bolaños Alfaro| equipo.html| feature_2|commits en feature_2 y en la rama bugs |
+
 
 ## Evidencias Git
 
 | Funcionalidad/corrección | PR hacia develop | Revisor | Resultado de merge / conflicto si ocurrió |
 |---|---|---|---|
-| | | | |
-
+|fix: Arreglo de todos los bugs de la Parte A de el primer examen de Desarrollo de Software IV | ![alt text](image_pr_develop1.png)| Daniel Bolaños Alfaro|Merged - No ocurrieron conflictos |
+|feat: Pull request hacia develop de todos los cambios realizados en feature_1, agregando imagenes usadas para la creación de menu.html y su respectivo archivo css llamado menu.css | | Daniel Bolaños Alfaro| Merged - No ocurrieron conflictos|
+|feat: Pull request hacia develop de todos los cambios realizados en feature_2, agregando imagenes usadas para la creación de equipo.html y su respectivo archivo css llamado equipo.css| |Daniel Umaña Murillo | Merged - No ocurrieron conflictos|
+ 
 ## Verificación final
 Registrar las pruebas de funcionamiento a 1280 px y 375 px, enlaces y páginas.
