@@ -5,33 +5,103 @@
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>SAVIA | Nuestra carta</title>
-  <link href="../css/styles.css" rel="stylesheet" />
+  <link href="../css/menu.css" rel="stylesheet" />
 </head>
 
 <body>
-   <header class="site-header">
-      <div class="container nav-inner">
-        <a class="logo" href="index.html"> SAVIA. </a>
-        <nav aria-label="Navegaci&oacute;n principal" class="nav-links">
-          <a aria-current="page" href="../index.html"> Inicio </a>
-          <a class="nav-contact" href="menu.html"> Nuestra carta </a>
-        </nav>
-      </div>
-    </header>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="logo" href="../index.html"> SAVIA. </a>
+      <nav aria-label="Navegaci&oacute;n principal" class="nav-links">
+        <a aria-current="page" href="../index.html"> Inicio </a>
+        <a class="nav-contact" href="menu.html"> Nuestra carta </a>
+        <a class="nav-contact" href="equipo.html">Equipo</a>
+      </nav>
+    </div>
+  </header>
 
   <section class="page-hero">
     <div class="container">
       <span class="eyebrow"> SAVIA </span>
       <h1>Nuestra carta</h1>
       <p>Descubra nuestros platos favoritos.</p>
+      <p>
+        En esta sección descubrirá una selección de los productos que tenemos para ofrecerle, incluyendo algunas de las
+        opciones favoritas de nuestros clientes.
+      </p>
     </div>
   </section>
+
   <main class="section container">
-    <!-- Espacio de trabajo: esta página está pendiente de implementación. -->
+    <nav class="menu-tiempos" aria-label="Navegación por los tiempos">
+      <a href="#entrada">Entrada</a>
+      <a href="#plato-fuerte">Plato fuerte</a>
+      <a href="#postre">Postre</a>
+    </nav>
+
+    <section class="section-propuesta">
+      <h2>Un viaje de tres tiempos</h2>
+      <p>
+        En SAVIA, cada plato cuenta una historia. Disfrute una experiencia gastronómica
+        que combina ingredientes frescos, creatividad y sabor.
+      </p>
+    </section>
+
+    <!-- Entrada -->
+    <section class="plato-card" id="entrada">
+      <img src="../images/imagen_entrada.avif" alt="Entrada de pan de ajo " />
+      <div class="plato-info">
+        <span class="plato-numero">PRIMER TIEMPO</span>
+        <h2>Entrada</h2>
+        <h3>Pan de Ajo</h3>
+        <p>
+          Nuestro delicioso pan de Ajo con tomate y un recubrimiento de queso mozzarela
+          derretido
+        </p>
+        <p class="precio">₡1.500</p>
+      </div>
+    </section>
+
+    <!-- Plato fuerte -->
+    <section class="plato-card" id="plato-fuerte">
+      <img src="../images/imagen_plato_fuerte.jpg" alt="Spaggeti" />
+      <div class="plato-info">
+        <span class="plato-numero">SEGUNDO TIEMPO</span>
+        <h2>Plato fuerte</h2>
+        <h3>Pasta</h3>
+        <p>
+          Deliciosa pasta casera con queso y albahaca. Excelente para los amantes de la
+          buena pasta.
+        </p>
+        <p class="precio">₡3.500</p>
+      </div>
+    </section>
+
+    <!-- Postre -->
+    <section class="plato-card" id="postre">
+      <img src="../images/imagen_postre.avif" alt="Postre Tiramisu" />
+      <div class="plato-info">
+        <span class="plato-numero">TERCER TIEMPO</span>
+        <h2>Postre</h2>
+        <h3>Tiramisu</h3>
+        <p>Tiramisu casero con receta propia de la casa.</p>
+        <p class="precio">₡2.000</p>
+      </div>
+    </section>
+
+    <!-- Información final -->
+    <section class="experiencia-final">
+      <h2>Una experiencia con propósito</h2>
+      <p>
+        En SAVIA creemos que la gastronomía es una forma de conectar con los
+        ingredientes, disfrutar cada momento y compartir experiencias memorables.
+      </p>
+    </section>
   </main>
+
   <footer class="site-footer">
     <div class="container footer-inner">
-      <strong> SAVIA. &middot; Cocina con prop&oacute;sito </strong>
+      <strong> SAVIA &middot; Cocina con prop&oacute;sito </strong>
       <p>
         Proyecto acad&eacute;mico &middot; Sitio de demostraci&oacute;n sin
         transacciones reales
