@@ -10,6 +10,13 @@
   font-family: "Playfair Display", Georgia, serif;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  line-height: 1.15;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -25,19 +32,16 @@ body {
   line-height: 2;
 }
 
-header {
-  background-color: white;
-  gap: 24px;
-  min-height: 78px;
-  align-items: center;
-  align-content: space-around;
-
-  color: var(--forest);
-}
+/* Header */
 
 .site-header {
-  background: #fff;
+  background-color: white;
   border-bottom: 1px solid #e8e7df;
+}
+
+.container {
+  width: min(1100px, calc(100% - 40px));
+  margin-inline: auto;
 }
 
 .nav-inner {
@@ -60,18 +64,35 @@ header {
   display: flex;
   align-items: center;
   gap: 23px;
-  flex-wrap: wrap;
 }
 
 .nav-links a {
   font-size: 14px;
   font-weight: 700;
+  color: var(--forest);
+  text-decoration: none;
 }
 
 .nav-links a:hover,
-.nav-links a[aria-current='page'] {
+.nav-links a[aria-current="page"] {
   color: #a17034;
 }
+
+.mensaje-final {
+  margin: 65px 0 35px;
+  padding: 35px;
+  border-radius: 18px;
+  background-color: rgb(200, 214, 203);
+  text-align: center;
+}
+
+
+.mensaje-final p {
+  max-width: 720px;
+  margin: 15px auto;
+  line-height: 1.8;
+}
+
 
 a {
   text-decoration: none;
@@ -105,6 +126,10 @@ a {
 }
 
 .eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: 700;
   color: var(--gold);
 }
 
@@ -133,6 +158,8 @@ a {
   color: white;
 }
 
+
+
 .team-container {
   display: flex;
   flex-direction: column;
@@ -140,31 +167,34 @@ a {
   gap: 22px;
   padding: 10px 0 35px;
 }
+
 .team-member {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 100%;
+  min-height: 320px;
   border: 1px solid #d9dfd7;
   border-radius: 12px;
   background-color: rgb(236, 233, 227);
+  overflow: hidden;
 }
 
 .team-member-title {
   flex: 1;
   min-width: 0;
-  padding: 20px 25px;
+  padding: 30px 40px;
 }
 
 .team-member-title p {
   color: var(--mute);
   line-height: 1.6;
 }
+
 .team-member img {
   width: 40%;
-  height: 220px;
+  height: auto;
   object-fit: contain;
-
 }
 
 img {
@@ -191,11 +221,17 @@ img {
   .team-member {
     flex-direction: column;
     width: 100%;
+    min-height: auto;
   }
 
-  .team-member img {
-    width: 100%;
-    height: 180px;
+.team-member img {
+  width: 40%;
+  height: auto;
+  object-fit: contain;
+}
+
+  .team-member-title {
+    padding: 20px;
   }
 
   .action-btns-container {
@@ -206,11 +242,12 @@ img {
 
 @media (min-width: 1280px) {
   .team-member {
-    max-width: 600px;
+    max-width: 1000px;
+    min-height: 350px;
   }
 
   .team-member img {
     width: 40%;
-    height: 220px;
+    height: 350px;
   }
 }
