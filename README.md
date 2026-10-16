@@ -28,7 +28,7 @@ El sitio incluye la página Inicio y las plantillas `pages/menu.html`, `pages/eq
 |---|---|---|---|
 |fix: Arreglo de todos los bugs de la Parte A de el primer examen de Desarrollo de Software IV | ![alt text](image_pr_develop1.png)| Daniel Bolaños Alfaro|Merged - No ocurrieron conflictos |
 |feat: Pull request hacia develop de todos los cambios realizados en feature_1, agregando imagenes usadas para la creación de menu.html y su respectivo archivo css llamado menu.css | | Daniel Bolaños Alfaro| Merged - No ocurrieron conflictos|
-|feat: Pull request hacia develop de todos los cambios realizados en feature_2, agregando imagenes usadas para la creación de equipo.html y su respectivo archivo css llamado equipo.css| |Daniel Umaña Murillo | Merged - No ocurrieron conflictos|
+|feat: Pull request hacia develop de todos los cambios realizados en feature_2, agregando imagenes usadas para la creación de equipo.html y su respectivo archivo css llamado equipo.css| ![alt text](image-8.png)|Daniel Umaña Murillo | Merged - No ocurrieron conflictos|
  
 ## Verificación final
 Registrar las pruebas de funcionamiento a 1280 px y 375 px, enlaces y páginas.
